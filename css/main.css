@@ -1,0 +1,183 @@
+/***************** 
+     GENERAL 
+********************/
+
+/* per togliere la sottolineature ai link */
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+/***************** 
+     HEADER 
+********************/
+
+/* non voglio centrare tutti i LINK ma solo quello del titolo
+   --> quindi uso l'ID logo   */
+#logo {
+	text-align: center;
+}
+
+header {
+	background-color: #37a96d;
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	overflow: auto;
+}
+
+h1 {
+	color: #ffffff;
+    font-family: 'Candal', sans-serif;
+	margin: 15px 0;
+	font-size: 2.1em;
+}
+
+h2 {
+	color: #ffffff;
+    font-family: 'Candal', sans-serif;
+	margin: 15px 0 20px 0;
+	font-size: 1.4em;
+}
+
+/***************** 
+     NAV 
+********************/
+
+nav {
+	text-align: center;
+	background-color: #297f52;
+	padding: 5px 0 5px 0;
+}
+
+nav a {
+	color:#ffffff;
+}
+
+/* Quando il mouse passa sopra una delle pagine selezionabili 
+   --> il colore cambia, diventa + scuro */
+nav a:hover {
+	color: #27583f;
+}
+
+/* La pagina corrente è selezionabile ma è evidenziata con un 
+   colore + scuro  */
+nav a.selected{
+	color:#27583f;
+	font-weight: bold;
+	padding: 0 2px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 5px 0;
+	padding: 0; 
+}
+
+nav li {
+	display: inline-block;
+}
+
+/***************** 
+     SECTION 
+********************/
+
+#wrapper {
+	/*background-color: red;*/
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5% 5px 5%;
+}
+
+#gallery {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* foto della pagina PORTFOLIO: cosa succede se lo schermo cambia
+  di dimensioni con un layout a 2 colonne -->
+  la foto, in larghezza, deve occupare il 45% dello spazio 
+  disponibile
+  i margini, a dx e sx, il 2,5% ciascuno. Tot margini 5%  */
+#gallery li{
+	float:left;
+	width: 45%;
+	margin: 2.5%;
+	background-color: #f5f5f5;
+}
+
+#gallery li a p{
+	font-size: 0.85em;
+	color: #000000;
+	padding: 5%;
+	margin: 0;
+} 
+
+/***************** 
+    FOOTER 
+********************/
+
+footer {
+	text-align: center;
+	clear: both;
+	padding: 40px;
+}
+
+footer p {
+	font-size: 0.85;
+}
+
+.icona-social {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+/***************** 
+    ABOUT 
+********************/
+
+.foto-profilo {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto 40px;
+	border-radius: 30%;
+}
+
+/***************** 
+    CONTACT 
+********************/
+
+#contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#contact-info a {
+	color: #000000;
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
+
+#contact-info li.phone a {
+	background-image: url(../img/phone.png);
+} 
+
+#contact-info li.mail a {
+	background-image: url(../img/mail.png);
+} 
+
+#contact-info li.twitter a {
+	background-image: url(../img/twitter.png);
+} 

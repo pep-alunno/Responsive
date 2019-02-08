@@ -1,0 +1,73 @@
+
+/* Le regole sotto si applicano se lo schermo è PIU' GRANDE 
+   (o più piccolo) di una dimensione fissata in PIXEL */
+
+ /************************************
+       PAGINA CONTACT
+ ***********************************/
+@media screen and (min-width: 480px) {
+	#info {
+		width: 50%;
+		float: left;
+	}
+
+	#contatti {
+		width: 40%;
+		float: right;
+	}
+}
+
+ /************************************
+       PAGINA ABOUT
+ ***********************************/
+@media screen and (min-width: 660px) {
+	.foto-profilo {
+		float: left;
+		margin: 0 5% 3% 0;
+	}
+
+ /************************************
+       PAGINA PORTFOLIO
+ ***********************************/
+
+/* foto della pagina PORTFOLIO: cosa succede se lo schermo cambia
+  di dimensioni con un layout a 3 colonne -->
+  la foto, in larghezza, deve occupare il 28.3% dello spazio 
+  disponibile
+  i margini, a dx e sx, il 2,5% ciascuno. Tot margini 5%  */
+	#gallery li {
+		width: 28.3%;
+		margin: 2.5%;
+		}
+
+ /************************************
+       HEADER
+ ***********************************/
+
+	#logo {
+		float: left;
+		width: 45%;
+		margin-left: 5%;
+		text-align: left;
+	}
+
+	nav {
+		float: right;
+		width: 45%;
+		margin-right: 5%;
+		background: none;
+		text-align: right;
+		padding-top: 55px;
+	}
+
+nav a {
+	padding: 0 5px;
+	font-weight: bold;
+	font-size: 1.2em;
+	}
+
+header {
+	border-bottom: 5px solid #297f52;
+	}
+
+}
